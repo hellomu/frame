@@ -1,0 +1,78 @@
+// 用于公司全部项目的全局公共样式
+html,
+body {
+	font-size: 12px;
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+		"Microsoft YaHei", SimSun, sans-serif;
+	font-weight: 400;
+}
+// 吸顶样式
+.scroll-top {
+	margin: 0 !important;
+	border: $border-base;
+	position: absolute;
+	top: 70px; // 头部高度
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+// 布局样式
+.layout {
+	padding: $padding-small $padding-base;
+	margin: 5px;
+	border-radius: 5px;
+	background: #fff;
+	box-sizing: border-box;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.el-form-item--small.el-form-item {
+		margin-bottom: $margin-small;
+	}
+}
+
+// 按钮统一右侧显示
+.pull-right {
+	float: right;
+	margin-right: $margin-small;
+	text-align: right;
+	&:last-child {
+		margin-right: 0;
+	}
+	.el-button {
+		margin-bottom: $margin-small;
+	}
+}
+
+// dialog格式
+.dialog-mini {
+	.el-dialog {
+		width: 400px;
+	}
+}
+
+.dialog-small {
+	.el-dialog {
+		width: 600px;
+	}
+}
+
+.dialog-base {
+	.el-dialog {
+		width: 800px;
+	}
+}
+
+.dialog-big {
+	.el-dialog {
+		width: 950px;
+		.el-form-item {
+			width: 45%;
+			> .el-form-item__content {
+				width: 70%;
+			}
+		}
+	}
+}

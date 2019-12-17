@@ -1,0 +1,21 @@
+/* 覆盖饿了么UI的主题 */
+// $--color-primary: teal;
+
+$--font-size-extra-large: 18px !default;
+/// fontSize|1|Font Size|0
+$--font-size-large: 16px !default;
+/// fontSize|1|Font Size|0
+$--font-size-medium: 14px !default;
+/// fontSize|1|Font Size|0
+$--font-size-base: 13px !default;
+/// fontSize|1|Font Size|0
+$--font-size-small: 12px !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-small: 11px !default;
+$--size-base: 12px !default;
+$--table-header-background-color: #d9d9d9 !default;
+$--table-header-font-color: #000 !default;
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
